@@ -1,0 +1,86 @@
+
+.topbar {
+    background-color: #673AB7;
+    color: #1A2C5E;
+    margin: 0px;
+    padding: 0px;
+    /* box-shadow:  0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); */
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0px;
+}
+
+.mdc-drawer-app-content {
+  flex: auto;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.main-content {
+  /* height: 100%; */
+  /* margin-top: 10px; */
+  /* margin-left: 10px; */
+  background-color: #F9FAFB;
+}
+
+.app-bar {
+  position: absolute;
+  /* background-color: #1A2C5E; */
+}
+
+
+.mdc-drawer__title {
+  text-align: center;
+}
+
+.mdc-list-item__graphic {
+  margin-right: 15px;
+}
+
+.mdc-drawer__header {
+  margin: 0px;
+  padding: 0px;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.small-card-content {
+  padding-top: 6px;
+  padding-left: 16px;
+  padding-right: 6px;
+  padding-bottom: 16px;
+}
+
+.graph-card-content {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 6px;
+  padding-bottom: 16px;
+}
+
+
+.card-heading {
+  margin: 0px;
+  font-size: 18px;
+}
+
+.mdc-icon-button-small {
+  width: 24px;
+  height: 24px;
+  padding-top: 2.2px;
+  padding-left: 1.3px;
+  /* color: red; */
+}
+
+.mdc-card__actions {
+  min-height: 36px;
+  padding: 0px;
+  vertical-align: top;
+}
+
+
