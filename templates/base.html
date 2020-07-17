@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Material Modal Drawer Example</title>
+  <!-- <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet"> -->
+  <!-- <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script> -->
+  <link rel="stylesheet" href="{%static 'css/material.css'%}">
+  <script src="{%static 'scripts/material.js'%}"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="{%static 'css/style.css'%}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+</head>
+
+<body>
+  <aside class="mdc-drawer mdc-drawer--modal">
+    <div class="mdc-drawer__header">
+      <h3 class="mdc-drawer__title">Customer360</h3>
+      <h6 class="mdc-drawer__subtitle"> </h6>
+      <hr class="mdc-list-divider top-divider">
+    </div>
+    <div class="mdc-drawer__content">
+      <nav class="mdc-list">
+        <h6 class="mdc-list-group__subheader">Survey</h6>
+        <a class="mdc-list-item mdc-list-item--activated ripple-effect" href="#" aria-current="page">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">folder</i>
+          <span class="mdc-list-item__text">All Surveys</span>
+        </a>
+        <a class="mdc-list-item ripple-effect" href="#">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">create_new_folder</i>
+          <span class="mdc-list-item__text">New Survey</span>
+        </a>
+        <a class="mdc-list-item ripple-effect" href="#" tabindex="0">
+          <span class="mdc-list-item__ripple"></span>
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">support</i>
+          <span class="mdc-list-item__text">Support</span>
+        </a>
+        <hr class="mdc-list-divider">
+      </nav>
+    </div>
+  </aside>
+
+  <div class="mdc-drawer-scrim"></div>
+
+  <div class="mdc-drawer-app-content">
+    <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+          <!-- <span class="mdc-top-app-bar__title">Title</span> -->
+        </section>
+      </div>
+    </header>
+
+    <main class="main-content" id="main-content">
+      <div class="mdc-top-app-bar--fixed-adjust">
+        {% block content %}{% endblock content %}
+      </div>
+    </main>
+  </div>
+  <script src="{%static 'scripts/mdc.js'%}"></script>
+</body>
+
+</html>
